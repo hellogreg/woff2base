@@ -38,6 +38,14 @@
   body {
     --font-size: 1.5rem;
   }
+
+  h1 {
+    --font-size: 3rem;
+  }
+
+  h2 {
+    --font-size: 1.5rem;
+  }
 }
 
 *, *::before, *::after {
@@ -54,19 +62,29 @@ body {
   width: 96vw;
 }
 
+footer {
+  margin-bottom: 1rem;
+}
+
 h1 {
+  font-size: var(--font-size, 1.5rem);
   line-height: 1.25;
   margin: .5rem 0 1rem 0;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: var(--font-size, 1.125rem);
   text-transform: uppercase;
 }
 
 h2,
 p {
   margin: .5rem 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0 0 0 1.2rem;
 }
 
 input, button, textarea, select {
